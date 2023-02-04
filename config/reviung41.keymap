@@ -29,6 +29,7 @@
         tda: tap_dance_a {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_A";
+            #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings =
                 <&kp A>,
