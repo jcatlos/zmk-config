@@ -37,6 +37,31 @@
 };
 
 / {
+	macros {
+		long_a_lc: long_a_lc {
+			label = "long_a";
+			compatible = "zmk,behavior-macro";
+			wait-ms = <40>;
+			tap-ms = <40>;
+			bindings =
+				<&macro_press &kp LSHIFT>,
+				<&macro_tap &kp EQUAL>,
+				<&macro_release &kp LSHIFT>,
+				<&macro_tap &kp A>;
+		}
+	
+	}
+	
+	behaviors {
+		tda: tap_dance_a{
+		    compatible = "zmk,behavior-tap-dance";
+		    label = "TAP_DANCE_A";
+		    tapping-term-ms = <200>;
+		    bindings = <&kp A>, <&long_a_lc>;
+
+		}
+	}
+	
         keymap {
                 compatible = "zmk,keymap";
 
