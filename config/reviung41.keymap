@@ -54,7 +54,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_A_LC";
             #binding-cells = <0>;
-            tapping-term-ms = DIAC_TAP_DANCE_MS;
+            tapping-term-ms = <DIAC_TAP_DANCE_MS>;
             bindings =
                 <&kp A>,
                 <&kp N8>,
@@ -65,7 +65,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_A_UC";
             #binding-cells = <0>;
-            tapping-term-ms = DIAC_TAP_DANCE_MS;
+            tapping-term-ms = <DIAC_TAP_DANCE_MS>;
             bindings =
                 <&kp A>,
                 <&a_long_uc>,
