@@ -34,7 +34,7 @@
             tap-ms = <40>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp RALT>,
                 <&macro_tap>,
                 <&kp KP_N0>,
                 <&macro_tap>,
@@ -44,7 +44,7 @@
                 <&macro_tap>,
                 <&kp KP_N6>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp RALT>;
             #binding-cells = <0>;
         };
     };
@@ -58,7 +58,7 @@
             bindings =
                 <&kp A>,
                 <&kp N8>,
-                <&kp LEFT_BRACKET>;
+                <&kp RIGHT_BRACKET>;
         };
 
         tda_uc: tap_dance_a_uc {
