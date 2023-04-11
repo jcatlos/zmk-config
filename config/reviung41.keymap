@@ -6,7 +6,7 @@
 
 // ZMK nodefree config
 #include "../zmk-nodefree-config/helper.h"
-#include "../zmk-nodefree-config/international_chars/german.dtsi"   // Slovak special chars
+#include "../zmk-nodefree-config/international_chars/slovak.dtsi"   // Slovak special chars
 
 #define DIAC_TAP_DANCE_MS 100;
 
