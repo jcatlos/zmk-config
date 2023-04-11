@@ -18,7 +18,7 @@
             compatible = "zmk,behavior-macro";
             wait-ms = <40>;
             tap-ms = <40>;
-        }
+        };
 
         a_long_uc: a_long_uc {
             label = "a_long_uc";
