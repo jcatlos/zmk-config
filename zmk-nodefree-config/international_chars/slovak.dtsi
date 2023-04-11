@@ -1,0 +1,20 @@
+/* Slovak letters */
+ZMK_UNICODE_PAIR(sk_al,   N0, N0,  E, N1,   N0, N0,  C, N1) // á/Á
+
+/* á
+ ä
+ č
+ ď
+ é
+ í
+ ĺ
+ ľ
+ ň
+ ó
+ ô
+ ŕ
+ š
+ ť
+ ú
+ ý
+ ž*/
