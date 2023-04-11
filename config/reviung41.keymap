@@ -9,8 +9,7 @@
 #include "../zmk-nodefree-config/international_chars/german.dtsi"   // Slovak special chars
 
 #define DIAC_TAP_DANCE_MS 100;
-    
-#define
+
 
 / {
     macros {
