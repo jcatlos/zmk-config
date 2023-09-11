@@ -20,6 +20,8 @@
             wait-ms = <40>;
             tap-ms = <40>;
             bindings =
+                <&macro_release>,
+                <&kp LSHIFT>,
                 <&macro_tap>,
                 <&kp EQUAL>,
                 <&macro_press>,
