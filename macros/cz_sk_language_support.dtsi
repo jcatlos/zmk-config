@@ -1,0 +1,56 @@
+#include <dt-bindings/zmk/keys.h>
+
+#pragma once
+
+/****** LETTER MODIFIER MACROS ******/
+
+/ {
+    macros {
+
+        e_long_uc: e_long_uc {
+            label = "e_long_uc";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings =
+                <&macro_release>,
+                <&kp LSHIFT>,
+                <&macro_tap>,
+                <&kp EQUAL>,
+                <&macro_press>,
+                <&kp LSHIFT>,
+                <&macro_tap>,
+                <&kp E>,
+                <&macro_release>,
+                <&kp LSHIFT>;
+            #binding-cells = <0>;
+        };
+    };
+};
+
+#define LOWERCASE_LONG(letter) \
+    / { \
+        macros { \
+            lc_l_ ## letter: lc_l_ ## letter { \
+                label = "lc_l_ ## letter"; \
+                compatible = "zmk,behavior-macro"; \
+                wait-ms = <40>; \
+                tap-ms = <40>; \
+                bindings = \
+                    <&macro_tap>, \
+                    <&kp EQUAL>, \
+                    <&macro_tap>, \
+                    <&kp letter>, \
+                #binding-cells = <0>; \
+                }; \
+        }; \
+    };
+
+
+/****** KEY DEFINITIONS ******/
+
+#define lc_l_A N8                       // lowercase A long     - á
+#define lc_s_A RIGHT_BRACKET            // lowercase A special  - ä
+
+#define lc_l_e_key N0                       // lowercase E long     - é
+#define lc_s_e LOWERCASE_LONG(E)
