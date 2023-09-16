@@ -55,4 +55,4 @@
 #define lc_s_A RIGHT_BRACKET            // lowercase A special  - ä
 
 #define lc_l_e_key N0                       // lowercase E long     - é
-#define lc_s_e LOWERCASE_LONG(E)
+LOWERCASE_LONG(E)
