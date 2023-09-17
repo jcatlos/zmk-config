@@ -42,7 +42,7 @@
                     <&macro_tap>, \
                     <&kp EQUAL>, \
                     <&macro_tap>, \
-                    <&kp letter>, \
+                    <&kp letter>; \
                 #binding-cells = <0>; \
                 }; \
         }; \
