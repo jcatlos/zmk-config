@@ -1,0 +1,62 @@
+#include <dt-bindings/zmk/keys.h>
+
+#pragma once
+
+/***** HELPER MACROS *****/
+
+#define HELPER_STRINGIFY(x) #x
+
+#define HELPER_R_ALT(key, name) \
+    / { \
+        macros { \
+            cs_ ## name: cs_ ## name { \
+                label = HELPER_STRINGIFY(cs_ ## name); \
+                compatible = "zmk,behavior-macro"; \
+                wait-ms = <40>; \
+                tap-ms = <40>; \
+                bindings = \
+                    <&macro_press>, \
+                    <&kp RALT>, \
+                    <&macro_tap>, \
+                    <&kp key>, \
+                    <&macro_release>, \
+                    <&kp RALT>; \
+                #binding-cells = <0>; \
+                }; \
+        }; \
+    };
+
+#define HELPER_L_SHIFT(key, name) \
+    / { \
+        macros { \
+            cs_ ## name: cs_ ## name { \
+                label = HELPER_STRINGIFY(cs_ ## name); \
+                compatible = "zmk,behavior-macro"; \
+                wait-ms = <40>; \
+                tap-ms = <40>; \
+                bindings = \
+                    <&macro_press>, \
+                    <&kp LSHIFT>, \
+                    <&macro_tap>, \
+                    <&kp key>, \
+                    <&macro_release>, \
+                    <&kp LSHIFT>; \
+                #binding-cells = <0>; \
+                }; \
+        }; \
+    };
+
+
+/****** KEY DEFINITIONS ******/
+
+HELPER_L_SHIFT(N0, N0)        // 0
+HELPER_L_SHIFT(N1, N1)        // 1
+HELPER_L_SHIFT(N2, N2)        // 2
+HELPER_L_SHIFT(N3, N3)        // 3
+HELPER_L_SHIFT(N4, N4)        // 4
+HELPER_L_SHIFT(N5, N5)        // 5
+HELPER_L_SHIFT(N6, N6)        // 6
+HELPER_L_SHIFT(N7, N7)        // 7
+HELPER_L_SHIFT(N8, N8)        // 8
+HELPER_L_SHIFT(N9, N9)        // 9
+
