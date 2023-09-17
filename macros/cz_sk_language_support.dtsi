@@ -54,7 +54,6 @@
         }; \
     };
 
-
 #define LOWERCASE_LONG(letter) \
     / { \
         macros { \
@@ -66,6 +65,50 @@
                 bindings = \
                     <&macro_tap>, \
                     <&kp EQUAL>, \
+                    <&macro_tap>, \
+                    <&kp letter>; \
+                #binding-cells = <0>; \
+                }; \
+        }; \
+    };
+
+#define UPPERCASE_SOFT(letter) \
+    / { \
+        macros { \
+            uc_s_ ## letter: uc_s_ ## letter { \
+                label = HELPER_STRINGIFY(uc_s_ ## letter); \
+                compatible = "zmk,behavior-macro"; \
+                wait-ms = <40>; \
+                tap-ms = <40>; \
+                bindings = \
+                    <&macro_press>, \
+                    <&kp LSHIFT>, \
+                    <&macro_tap>, \
+                    <&kp EQUAL>, \
+                    <&macro_tap>, \
+                    <&kp letter>, \
+                    <&macro_release>, \
+                    <&kp LSHIFT>; \
+                #binding-cells = <0>; \
+                }; \
+        }; \
+    };
+
+#define LOWERCASE_SOFT(letter) \
+    / { \
+        macros { \
+            lc_s_ ## letter: lc_s_ ## letter { \
+                label = HELPER_STRINGIFY(lc_s_ ## letter); \
+                compatible = "zmk,behavior-macro"; \
+                wait-ms = <40>; \
+                tap-ms = <40>; \
+                bindings = \
+                    <&macro_press>, \
+                    <&kp LSHIFT>, \
+                    <&macro_tap>, \
+                    <&kp EQUAL>, \
+                    <&macro_release>, \
+                    <&kp LSHIFT>; \
                     <&macro_tap>, \
                     <&kp letter>; \
                 #binding-cells = <0>; \
