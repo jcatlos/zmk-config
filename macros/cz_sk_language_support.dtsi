@@ -34,7 +34,7 @@
     / { \
         macros { \
             lc_l_ ## letter: lc_l_ ## letter { \
-                label = HELPER_STRINGIFY("lc_l_" ## letter); \
+                label = HELPER_STRINGIFY(lc_l_ ## letter); \
                 compatible = "zmk,behavior-macro"; \
                 wait-ms = <40>; \
                 tap-ms = <40>; \
