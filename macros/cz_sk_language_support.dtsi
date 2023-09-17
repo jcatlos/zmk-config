@@ -30,6 +30,31 @@
     };
 };
 
+#define UPPERCASE_LONG(letter) \
+    / { \
+        macros { \
+            uc_l_ ## letter: uc_l_ ## letter { \
+                label = HELPER_STRINGIFY(uc_l_ ## letter); \
+                compatible = "zmk,behavior-macro"; \
+                wait-ms = <40>; \
+                tap-ms = <40>; \
+                bindings = \
+                    <&macro_release>, \
+                    <&kp LSHIFT>, \
+                    <&macro_tap>, \
+                    <&kp EQUAL>, \
+                    <&macro_press>, \
+                    <&kp LSHIFT>, \
+                    <&macro_tap>, \
+                    <&kp letter>, \
+                    <&macro_release>, \
+                    <&kp LSHIFT>; \
+                #binding-cells = <0>; \
+                }; \
+        }; \
+    };
+
+
 #define LOWERCASE_LONG(letter) \
     / { \
         macros { \
