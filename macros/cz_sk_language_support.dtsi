@@ -127,7 +127,7 @@ UPPERCASE_LONG(A)                       // uppercase A long     - Á
 LOWERCASE_LONG(E)                       // lowercase E long     - é
 UPPERCASE_LONG(E)                       // uppercase E long     - É
 LOWERCASE_SOFT(E)                       // lowercase E soft     - ě  
-UPPERCASE_SOFT(E)                       // lowercase E soft     - Ě
+UPPERCASE_SOFT(E)                       // uppercase E soft     - Ě
 
 LOWERCASE_LONG(I)                       // lowercase I long     - í
 UPPERCASE_LONG(I)                       // uppercase I long     - Í
