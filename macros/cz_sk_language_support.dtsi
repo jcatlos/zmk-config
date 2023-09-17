@@ -120,7 +120,27 @@
 /****** KEY DEFINITIONS ******/
 
 #define lc_l_A N8                       // lowercase A long     - á
-#define lc_s_A RIGHT_BRACKET            // lowercase A special  - ä
+UPPERCASE_LONG(A)                       // uppercase A long     - Á
+#define lc_m_A RIGHT_BRACKET            // lowercase A miscellenaous  - ä
+// TODO                                 // uppercase A miscellenaous  - Ä
 
-#define lc_l_e_key N0                       // lowercase E long     - é
-LOWERCASE_LONG(E)
+LOWERCASE_LONG(E)                       // lowercase E long     - é
+UPPERCASE_LONG(E)                       // uppercase E long     - É
+LOWERCASE_SOFT(E)                       // lowercase E soft     - ě  
+UPPERCASE_SOFT(E)                       // lowercase E soft     - Ě
+
+LOWERCASE_LONG(I)                       // lowercase I long     - í
+UPPERCASE_LONG(I)                       // uppercase I long     - Í
+
+LOWERCASE_LONG(O)                       // lowercase O long     - ó
+UPPERCASE_LONG(O)                       // uppercase O long     - Ó
+// TODO                                 // lowercase O miscellenaous  - ô
+// TODO                                 // uppercase O miscellenaous  - 
+
+LOWERCASE_LONG(U)                       // lowercase U long     - ú
+UPPERCASE_LONG(U)                       // uppercase U long     - Ú
+// TODO                                 // lowercase U miscellenaous  - 
+// TODO                                 // uppercase U miscellenaous  - 
+
+LOWERCASE_LONG(Y)                       // lowercase Y long     - ý
+UPPERCASE_LONG(Y)                       // uppercase Y long     - Ý
