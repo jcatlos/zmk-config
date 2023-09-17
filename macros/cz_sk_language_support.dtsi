@@ -144,3 +144,31 @@ UPPERCASE_LONG(U)                       // uppercase U long     - Ú
 
 LOWERCASE_LONG(Y)                       // lowercase Y long     - ý
 UPPERCASE_LONG(Y)                       // uppercase Y long     - Ý
+
+LOWERCASE_SOFT(S)                       // lowercase S soft     - š
+UPPERCASE_SOFT(S)                       // uppercase S soft     - Š
+
+LOWERCASE_SOFT(T)                       // lowercase T soft     - ť
+UPPERCASE_SOFT(T)                       // uppercase T soft     - Ť
+
+LOWERCASE_SOFT(Z)                       // lowercase Z soft     - ž
+UPPERCASE_SOFT(Z)                       // uppercase Z soft     - Ž
+
+LOWERCASE_SOFT(D)                       // lowercase D soft     - ď
+UPPERCASE_SOFT(D)                       // uppercase D soft     - Ď
+
+LOWERCASE_SOFT(C)                       // lowercase C soft     - č
+UPPERCASE_SOFT(C)                       // uppercase C soft     - Č
+
+LOWERCASE_SOFT(N)                       // lowercase N soft     - ň
+UPPERCASE_SOFT(N)                       // uppercase N soft     - Ň
+
+LOWERCASE_LONG(L)                       // lowercase L long     - ĺ
+UPPERCASE_LONG(L)                       // uppercase L long     - Ĺ
+LOWERCASE_SOFT(L)                       // lowercase L soft     - ľ  
+UPPERCASE_SOFT(L)                       // uppercase L soft     - Ľ
+
+LOWERCASE_LONG(R)                       // lowercase R long     - ŕ
+UPPERCASE_LONG(R)                       // uppercase R long     - Ŕ
+LOWERCASE_SOFT(R)                       // lowercase R soft     - ř
+UPPERCASE_SOFT(R)                       // uppercase R soft     - Ř
