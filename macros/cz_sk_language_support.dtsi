@@ -4,7 +4,7 @@
 
 #define HELPER_STRINGIFY(x) #x
 
-/****** LETTER MODIFIER MACROS ******/
+/****** SPECIAL CASES MACROS ******/
 
 / {
     macros {
@@ -130,6 +130,8 @@
         };
     };
 };
+
+/****** LETTER MODIFIER MACROS ******/
 
 #define UPPERCASE_LONG(letter) \
     / { \
