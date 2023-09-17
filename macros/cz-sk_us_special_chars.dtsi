@@ -60,3 +60,9 @@ HELPER_L_SHIFT(N7, N7)        // 7
 HELPER_L_SHIFT(N8, N8)        // 8
 HELPER_L_SHIFT(N9, N9)        // 9
 
+HELPER_L_SHIFT(RBKT, LPAR)      // (
+HELPER_L_SHIFT(FSLH, RPAR)      // )
+HELPER_R_ALT(B, LBRC)           // {
+HELPER_R_ALT(N, RBRC)           // }
+HELPER_R_ALT(F, LBRT)           // [
+HELPER_R_ALT(G, RBRT)           // ]
