@@ -66,3 +66,13 @@ HELPER_R_ALT(B, LBRC)           // {
 HELPER_R_ALT(N, RBRC)           // }
 HELPER_R_ALT(F, LBRT)           // [
 HELPER_R_ALT(G, RBRT)           // ]
+
+HELPER_R_ALT(N1, TILDE)         // ~
+HELPER_L_SHIFT(SQT, EXCL)       // !
+HELPER_R_ALT(V, AT)             // @
+HELPER_R_ALT(X, HASH)           // #
+HELPER_R_ALT(SEMI, DLLR)        // $
+HELPER_L_SHIFT(PRCNT, MINUS)    // %
+// ^
+// &
+// *
