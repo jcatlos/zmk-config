@@ -15,6 +15,8 @@
                 wait-ms = <40>; \
                 tap-ms = <40>; \
                 bindings = \
+                    <&macro_release>, \
+                    <&kp LSHIFT>; \
                     <&macro_press>, \
                     <&kp RALT>, \
                     <&macro_tap>, \
@@ -35,6 +37,8 @@
                 wait-ms = <40>; \
                 tap-ms = <40>; \
                 bindings = \
+                    <&macro_release>, \
+                    <&kp LSHIFT>; \
                     <&macro_press>, \
                     <&kp RALT>, \
                     <&macro_tap>, \
@@ -98,3 +102,8 @@ HELPER_L_SHIFT(MINUS, PRCNT)    // %
 HELPER_R_ALT_CANCELLED(N3, CARET)// ^
 HELPER_R_ALT(C, AMPS)           // &
 HELPER_R_ALT(FSLH, ASTRK)       // *
+
+// -
+// _
+// =
+// + 
