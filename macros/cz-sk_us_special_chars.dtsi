@@ -26,6 +26,28 @@
         }; \
     };
 
+#define HELPER_R_ALT_CANCELLED(key, name) \
+    / { \
+        macros { \
+            cs_ ## name: cs_ ## name { \
+                label = HELPER_STRINGIFY(cs_ ## name); \
+                compatible = "zmk,behavior-macro"; \
+                wait-ms = <40>; \
+                tap-ms = <40>; \
+                bindings = \
+                    <&macro_press>, \
+                    <&kp RALT>, \
+                    <&macro_tap>, \
+                    <&kp key>, \
+                    <&macro_release>, \
+                    <&kp RALT>; \
+                    <&macro_tap>, \
+                    <&kp SPACE>, \
+                #binding-cells = <0>; \
+                }; \
+        }; \
+    };
+
 #define HELPER_L_SHIFT(key, name) \
     / { \
         macros { \
@@ -72,7 +94,7 @@ HELPER_L_SHIFT(SQT, EXCL)       // !
 HELPER_R_ALT(V, AT)             // @
 HELPER_R_ALT(X, HASH)           // #
 HELPER_R_ALT(SEMI, DLLR)        // $
-HELPER_L_SHIFT(PRCNT, MINUS)    // %
-// ^
-// &
-// *
+HELPER_L_SHIFT(MINUS, PRCNT)    // %
+HELPER_R_ALT_CANCELLED(N3, CARET)// ^
+HELPER_R_ALT(C, AMPS)           // &
+HELPER_R_ALT(FSLH, ASTRK)       // *
