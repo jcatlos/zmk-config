@@ -110,16 +110,18 @@ HELPER_R_ALT(B, LBRC)           // {
 HELPER_R_ALT(N, RBRC)           // }
 HELPER_R_ALT(F, LBRT)           // [
 HELPER_R_ALT(G, RBRT)           // ]
+HELPER_R_ALT(COMMA, LT)         // <
+HELPER_R_ALT(DOT, GT)           // >
 
-HELPER_R_ALT(N1, TILDE)         // ~
-HELPER_L_SHIFT(SQT, EXCL)       // !
-HELPER_R_ALT(V, AT)             // @
-HELPER_R_ALT(X, HASH)           // #
-HELPER_R_ALT(SEMI, DLLR)        // $
-HELPER_L_SHIFT(MINUS, PRCNT)    // %
-HELPER_R_ALT_CANCELLED(N3, CARET)// ^
-HELPER_R_ALT(C, AMPS)           // &
-HELPER_R_ALT(FSLH, ASTRK)       // *
+HELPER_R_ALT(N1, TILDE)             // ~
+HELPER_L_SHIFT(SQT, EXCL)           // !
+HELPER_R_ALT(V, AT)                 // @
+HELPER_R_ALT(X, HASH)               // #
+HELPER_R_ALT(SEMI, DLLR)            // $
+HELPER_L_SHIFT(MINUS, PRCNT)        // %
+HELPER_R_ALT_CANCELLED(N3, CARET)   // ^
+HELPER_R_ALT(C, AMPS)               // &
+HELPER_R_ALT(FSLH, ASTRK)           // *
 
 HELPER_REBIND(FSLH, MINUS)      // -
 HELPER_L_SHIFT(FSLH, UNDER)     // _
@@ -130,10 +132,11 @@ HELPER_L_SHIFT(COMMA, QMARK)    // ?
 HELPER_L_SHIFT(DOT, COLON)      // :
 HELPER_REBIND(GRAVE, SEMI)      // ;
 
-// '
-// "
-// `
 
-// /
-// \
-// |
+HELPER_R_ALT(P, SQT)                // '
+HELPER_L_SHIFT(SEMI, DQT)           // "
+HELPER_R_ALT_CANCELLED(N7, GRAVE)   // `
+
+HELPER_SHIFT(LBKT, FSLH)            // /
+HELPER_R_ALT(Q, BSLH)               // \ (prevent endline)
+HELPER_R_ALT(W, PIPE)               // |
