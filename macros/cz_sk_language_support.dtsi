@@ -22,7 +22,7 @@
                 <&macro_release>,
                 <&kp LALT>,
                 <&macro_tap>,
-                <&kp A>,
+                <&kp A>;
             #binding-cells = <0>;
         };
 
@@ -62,7 +62,7 @@
                 <&macro_release>,
                 <&kp LALT>,
                 <&macro_tap>,
-                <&kp U>,
+                <&kp U>;
             #binding-cells = <0>;
         };
 
@@ -102,7 +102,7 @@
                 <&macro_release>,
                 <&kp LALT>,
                 <&macro_tap>,
-                <&kp O>,
+                <&kp O>;
             #binding-cells = <0>;
         };
 
