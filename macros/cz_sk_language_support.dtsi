@@ -20,7 +20,7 @@
                 <&macro_tap>,
                 <&kp MINUS>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp LALT>,
                 <&macro_tap>,
                 <&kp A>,
             #binding-cells = <0>;
@@ -39,7 +39,7 @@
                 <&macro_tap>,
                 <&kp MINUS>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp LALT>,
                 <&macro_press>,
                 <&kp LSHIFT>,
                 <&macro_tap>,
@@ -60,7 +60,7 @@
                 <&macro_tap>,
                 <&kp N5>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp LALT>,
                 <&macro_tap>,
                 <&kp U>,
             #binding-cells = <0>;
@@ -79,7 +79,7 @@
                 <&macro_tap>,
                 <&kp N5>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp LALT>,
                 <&macro_press>,
                 <&kp LSHIFT>,
                 <&macro_tap>,
@@ -100,7 +100,7 @@
                 <&macro_tap>,
                 <&kp N3>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp LALT>,
                 <&macro_tap>,
                 <&kp O>,
             #binding-cells = <0>;
@@ -119,7 +119,7 @@
                 <&macro_tap>,
                 <&kp N3>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp LALT>,
                 <&macro_press>,
                 <&kp LSHIFT>,
                 <&macro_tap>,
@@ -211,7 +211,7 @@
                     <&macro_tap>, \
                     <&kp EQUAL>, \
                     <&macro_release>, \
-                    <&kp LSHIFT>; \
+                    <&kp LSHIFT>, \
                     <&macro_tap>, \
                     <&kp letter>; \
                 #binding-cells = <0>; \
